@@ -8,7 +8,6 @@ import Link from 'next/link';
 interface Book {
   _id: string;
   title: string;
-  titleBn?: string;
   author: string;
   description: string;
   coverImage: string;
@@ -74,7 +73,6 @@ export default function AuthorDetailsPage({ params }: { params: Promise<{ name: 
             key={book._id}
             id={book._id}
             title={book.title}
-            titleBn={book.titleBn}
             author={book.author}
             description={book.description}
             coverImage={book.coverImage}
